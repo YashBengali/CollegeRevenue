@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A26444F51252C78238A305 /* Pods_CollegeRevenue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A97BF70B0B576216EF93C /* Pods_CollegeRevenue.framework */; };
+		D305786E2107A12400AFBA0E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */; };
 		D3724C7621066E86000E9367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7521066E86000E9367 /* AppDelegate.swift */; };
 		D3724C7821066E86000E9367 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7721066E86000E9367 /* ViewController.swift */; };
 		D3724C7B21066E86000E9367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3724C7921066E86000E9367 /* Main.storyboard */; };
 		D3724C7E21066E86000E9367 /* CollegeRevenue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7C21066E86000E9367 /* CollegeRevenue.xcdatamodeld */; };
 		D3724C8021066E88000E9367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3724C7F21066E88000E9367 /* Assets.xcassets */; };
 		D3724C8321066E88000E9367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3724C8121066E88000E9367 /* LaunchScreen.storyboard */; };
+		D3724C8B2106747F000E9367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3724C8A2106747E000E9367 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450A97BF70B0B576216EF93C /* Pods_CollegeRevenue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeRevenue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C3F38D776306826626C88E /* Pods-CollegeRevenue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeRevenue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue.debug.xcconfig"; sourceTree = "<group>"; };
+		6D285987DADAB2085C67116E /* Pods-CollegeRevenue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeRevenue.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue.release.xcconfig"; sourceTree = "<group>"; };
+		D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		D3724C7221066E86000E9367 /* CollegeRevenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeRevenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3724C7521066E86000E9367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3724C7721066E86000E9367 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		D3724C7F21066E88000E9367 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3724C8221066E88000E9367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3724C8421066E88000E9367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3724C8A2106747E000E9367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A26444F51252C78238A305 /* Pods_CollegeRevenue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1607B7B0991D83DECB41C349 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65C3F38D776306826626C88E /* Pods-CollegeRevenue.debug.xcconfig */,
+				6D285987DADAB2085C67116E /* Pods-CollegeRevenue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D06644BA53BEBC9EB0E6B091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				450A97BF70B0B576216EF93C /* Pods_CollegeRevenue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3724C6921066E86000E9367 = {
 			isa = PBXGroup;
 			children = (
 				D3724C7421066E86000E9367 /* CollegeRevenue */,
 				D3724C7321066E86000E9367 /* Products */,
+				1607B7B0991D83DECB41C349 /* Pods */,
+				D06644BA53BEBC9EB0E6B091 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,8 +87,10 @@
 				D3724C7521066E86000E9367 /* AppDelegate.swift */,
 				D3724C7721066E86000E9367 /* ViewController.swift */,
 				D3724C7921066E86000E9367 /* Main.storyboard */,
+				D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */,
 				D3724C7F21066E88000E9367 /* Assets.xcassets */,
 				D3724C8121066E88000E9367 /* LaunchScreen.storyboard */,
+				D3724C8A2106747E000E9367 /* GoogleService-Info.plist */,
 				D3724C8421066E88000E9367 /* Info.plist */,
 				D3724C7C21066E86000E9367 /* CollegeRevenue.xcdatamodeld */,
 			);
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3724C8721066E88000E9367 /* Build configuration list for PBXNativeTarget "CollegeRevenue" */;
 			buildPhases = (
+				1016DDFCD468F9F23690F048 /* [CP] Check Pods Manifest.lock */,
 				D3724C6E21066E86000E9367 /* Sources */,
 				D3724C6F21066E86000E9367 /* Frameworks */,
 				D3724C7021066E86000E9367 /* Resources */,
+				F83CE676414CD532A7470500 /* [CP] Embed Pods Frameworks */,
+				E792C9D0B59B4185C1022D9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,10 +161,78 @@
 				D3724C8321066E88000E9367 /* LaunchScreen.storyboard in Resources */,
 				D3724C8021066E88000E9367 /* Assets.xcassets in Resources */,
 				D3724C7B21066E86000E9367 /* Main.storyboard in Resources */,
+				D3724C8B2106747F000E9367 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1016DDFCD468F9F23690F048 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollegeRevenue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E792C9D0B59B4185C1022D9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83CE676414CD532A7470500 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3724C6E21066E86000E9367 /* Sources */ = {
@@ -139,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3724C7E21066E86000E9367 /* CollegeRevenue.xcdatamodeld in Sources */,
+				D305786E2107A12400AFBA0E /* HomeScreenViewController.swift in Sources */,
 				D3724C7821066E86000E9367 /* ViewController.swift in Sources */,
 				D3724C7621066E86000E9367 /* AppDelegate.swift in Sources */,
 			);
@@ -282,6 +384,7 @@
 		};
 		D3724C8821066E88000E9367 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C3F38D776306826626C88E /* Pods-CollegeRevenue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +402,7 @@
 		};
 		D3724C8921066E88000E9367 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D285987DADAB2085C67116E /* Pods-CollegeRevenue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

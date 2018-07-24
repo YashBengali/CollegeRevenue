@@ -7,18 +7,31 @@
 //
 
 import UIKit
+import GoogleSignIn
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, GIDSignInUIDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(sign(_:)), name: NSNotification.Name(rawValue: "userDidSignInSuccessfully"), object: nil)
+        
+       // GIDSignIn.sharedInstance().signIn()
+        
+        // TODO(developer) Configure the sign-in button look/feel
+        // ...
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func sign(_ notification: Notification) {
+       
+            self.performSegue(withIdentifier: "goToHomeScreen", sender: self)
+        
+        
     }
+    
 
 
 }
