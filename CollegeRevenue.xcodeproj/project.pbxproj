@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		07A26444F51252C78238A305 /* Pods_CollegeRevenue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A97BF70B0B576216EF93C /* Pods_CollegeRevenue.framework */; };
 		D305786E2107A12400AFBA0E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */; };
+		D30578702107BDE700AFBA0E /* Sat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305786F2107BDE700AFBA0E /* Sat.swift */; };
+		D30578722107BDF200AFBA0E /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30578712107BDF200AFBA0E /* Act.swift */; };
 		D3724C7621066E86000E9367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7521066E86000E9367 /* AppDelegate.swift */; };
 		D3724C7821066E86000E9367 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7721066E86000E9367 /* ViewController.swift */; };
 		D3724C7B21066E86000E9367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3724C7921066E86000E9367 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		65C3F38D776306826626C88E /* Pods-CollegeRevenue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeRevenue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue.debug.xcconfig"; sourceTree = "<group>"; };
 		6D285987DADAB2085C67116E /* Pods-CollegeRevenue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeRevenue.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue.release.xcconfig"; sourceTree = "<group>"; };
 		D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		D305786F2107BDE700AFBA0E /* Sat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sat.swift; sourceTree = "<group>"; };
+		D30578712107BDF200AFBA0E /* Act.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
 		D3724C7221066E86000E9367 /* CollegeRevenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeRevenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3724C7521066E86000E9367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3724C7721066E86000E9367 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				D3724C7521066E86000E9367 /* AppDelegate.swift */,
 				D3724C7721066E86000E9367 /* ViewController.swift */,
 				D3724C7921066E86000E9367 /* Main.storyboard */,
+				D305786F2107BDE700AFBA0E /* Sat.swift */,
+				D30578712107BDF200AFBA0E /* Act.swift */,
 				D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */,
 				D3724C7F21066E88000E9367 /* Assets.xcassets */,
 				D3724C8121066E88000E9367 /* LaunchScreen.storyboard */,
@@ -239,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30578722107BDF200AFBA0E /* Act.swift in Sources */,
 				D3724C7E21066E86000E9367 /* CollegeRevenue.xcdatamodeld in Sources */,
+				D30578702107BDE700AFBA0E /* Sat.swift in Sources */,
 				D305786E2107A12400AFBA0E /* HomeScreenViewController.swift in Sources */,
 				D3724C7821066E86000E9367 /* ViewController.swift in Sources */,
 				D3724C7621066E86000E9367 /* AppDelegate.swift in Sources */,
