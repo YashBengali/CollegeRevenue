@@ -22,6 +22,7 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 GoogleService-Info.plist
+client_id.json
 
 ## Obj-C/Swift specific
 *.hmap
