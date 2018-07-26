@@ -11,6 +11,7 @@
 		D305786E2107A12400AFBA0E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */; };
 		D30578702107BDE700AFBA0E /* Sat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305786F2107BDE700AFBA0E /* Sat.swift */; };
 		D30578722107BDF200AFBA0E /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30578712107BDF200AFBA0E /* Act.swift */; };
+		D30C53DD2108D88700366B40 /* college_summary.csv in Resources */ = {isa = PBXBuildFile; fileRef = D30C53DC2108D88700366B40 /* college_summary.csv */; };
 		D3724C7621066E86000E9367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7521066E86000E9367 /* AppDelegate.swift */; };
 		D3724C7821066E86000E9367 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7721066E86000E9367 /* ViewController.swift */; };
 		D3724C7B21066E86000E9367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3724C7921066E86000E9367 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 		D3724C8021066E88000E9367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3724C7F21066E88000E9367 /* Assets.xcassets */; };
 		D3724C8321066E88000E9367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3724C8121066E88000E9367 /* LaunchScreen.storyboard */; };
 		D3724C8B2106747F000E9367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3724C8A2106747E000E9367 /* GoogleService-Info.plist */; };
+		D3CDC537210A385800AA8054 /* mindSparkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D3CDC536210A385800AA8054 /* mindSparkLogo.png */; };
+		D3CDC539210A7ED400AA8054 /* client_id.json in Resources */ = {isa = PBXBuildFile; fileRef = D3CDC538210A7ED300AA8054 /* client_id.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,7 @@
 		D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		D305786F2107BDE700AFBA0E /* Sat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sat.swift; sourceTree = "<group>"; };
 		D30578712107BDF200AFBA0E /* Act.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
+		D30C53DC2108D88700366B40 /* college_summary.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = college_summary.csv; sourceTree = "<group>"; };
 		D3724C7221066E86000E9367 /* CollegeRevenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeRevenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3724C7521066E86000E9367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3724C7721066E86000E9367 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		D3724C8221066E88000E9367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3724C8421066E88000E9367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3724C8A2106747E000E9367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3CDC536210A385800AA8054 /* mindSparkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mindSparkLogo.png; sourceTree = "<group>"; };
+		D3CDC538210A7ED300AA8054 /* client_id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = client_id.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 		D3724C6921066E86000E9367 = {
 			isa = PBXGroup;
 			children = (
+				D3CDC538210A7ED300AA8054 /* client_id.json */,
+				D3724C8A2106747E000E9367 /* GoogleService-Info.plist */,
 				D3724C7421066E86000E9367 /* CollegeRevenue */,
 				D3724C7321066E86000E9367 /* Products */,
 				1607B7B0991D83DECB41C349 /* Pods */,
@@ -88,15 +96,16 @@
 		D3724C7421066E86000E9367 /* CollegeRevenue */ = {
 			isa = PBXGroup;
 			children = (
+				D3CDC536210A385800AA8054 /* mindSparkLogo.png */,
 				D3724C7521066E86000E9367 /* AppDelegate.swift */,
 				D3724C7721066E86000E9367 /* ViewController.swift */,
 				D3724C7921066E86000E9367 /* Main.storyboard */,
 				D305786F2107BDE700AFBA0E /* Sat.swift */,
 				D30578712107BDF200AFBA0E /* Act.swift */,
 				D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */,
+				D30C53DC2108D88700366B40 /* college_summary.csv */,
 				D3724C7F21066E88000E9367 /* Assets.xcassets */,
 				D3724C8121066E88000E9367 /* LaunchScreen.storyboard */,
-				D3724C8A2106747E000E9367 /* GoogleService-Info.plist */,
 				D3724C8421066E88000E9367 /* Info.plist */,
 				D3724C7C21066E86000E9367 /* CollegeRevenue.xcdatamodeld */,
 			);
@@ -166,7 +175,10 @@
 			files = (
 				D3724C8321066E88000E9367 /* LaunchScreen.storyboard in Resources */,
 				D3724C8021066E88000E9367 /* Assets.xcassets in Resources */,
+				D3CDC537210A385800AA8054 /* mindSparkLogo.png in Resources */,
 				D3724C7B21066E86000E9367 /* Main.storyboard in Resources */,
+				D3CDC539210A7ED400AA8054 /* client_id.json in Resources */,
+				D30C53DD2108D88700366B40 /* college_summary.csv in Resources */,
 				D3724C8B2106747F000E9367 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +233,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CollegeRevenue/Pods-CollegeRevenue-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -229,6 +242,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",

@@ -12,7 +12,7 @@ target 'CollegeRevenue' do
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-  pod 'GoogleSignIn
-
+  pod 'GoogleSignIn'
+  pod 'GoogleAPIClientForREST'
 
 end
