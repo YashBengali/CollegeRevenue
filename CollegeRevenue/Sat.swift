@@ -13,17 +13,18 @@ import MobileCoreServices
 
 class Sat: UIViewController {
     
-    let driveService: GTLRService
+    
     
     @IBOutlet weak var satMathScore: UITextField!
     @IBOutlet weak var satReadingScore: UITextField!
+    var collegeReccomendations: [String] = []
     var finalSatScore: Int = 0
     let satScoreIndex: Int = 28
     let collegeNameIndex: Int = 3
     let actScoreIndex: Int = 29
     let fileName: String = "college_summary"
     let filePrefix: String = "csv"
-    
+    //var collegeReccomendations: [String] = []
     @IBAction func satScoreSent(_ sender: UIButton) {
         if let math=satMathScore.text{
             if let reading = satReadingScore.text {
@@ -32,6 +33,7 @@ class Sat: UIViewController {
                 print(mathAsInt+readingAsInt)
                 finalSatScore = mathAsInt+readingAsInt
                 readText()
+                changeViewControlllers()
             }
         }
     }
@@ -78,7 +80,7 @@ class Sat: UIViewController {
         // collegeReccomendations is the list of colleges that I am going to reccomend to the user
         var temporaryCounter = 0
         
-        var collegeReccomendations: [String] = []
+//        var collegeReccomendations: [String] = []
 //        for item in satScoreWithoutNull {
 //            if (Int(item) == finalSatScore) {
 //                collegeReccomendations.append(collegeWithSat[temporaryCounter])
@@ -87,8 +89,8 @@ class Sat: UIViewController {
 //        }
 //        print(collegeReccomendations)
         
-        let satRangeLow = finalSatScore-20
-        let satRangeHigh = finalSatScore+20
+        let satRangeLow = finalSatScore-50
+        let satRangeHigh = finalSatScore+50
         var currentItem: Int?
         for item in satScoreWithoutNull {
             currentItem = Int(item)
@@ -101,7 +103,7 @@ class Sat: UIViewController {
         let finalCollegeReccomendations: String = convertArrayToString(array: collegeReccomendations)
         //let finalCollegeName: String = convertArrayToString(array: collegeWithSat)
         createCSV(input: finalCollegeReccomendations)
-        testingApi()
+        //testingApi()
 
     }
 
@@ -112,7 +114,13 @@ class Sat: UIViewController {
         let fileManager = FileManager.default
         do {
             let path = try fileManager.url(for: .documentDirectory, in: .allDomainsMask, appropriateFor: nil, create: false)
+//            print("PRINTING OUT THE PATH NOW ******************")
+//            print(path)
             let fileURL = path.appendingPathComponent("CSVRec.csv")
+//            print("PRINTING OUT THE file url NOW ******************")
+//            print(fileURL)
+
+            print(fileURL)
             try csvString.write(to: fileURL, atomically: true, encoding: .utf8)
             print("it wrote to the file")
             print(fileURL)
@@ -133,12 +141,15 @@ class Sat: UIViewController {
         return stringToReturn
     }
   
-    
-    func testingApi() {
-        
+    func changeViewControlllers(){
+        self.performSegue(withIdentifier: "swapToDisplayingCollege", sender: nil)
     }
-   
     
+    func returnCollegeList() -> [String] {
+        print("in the return college list function")
+        print(collegeReccomendations)
+        return collegeReccomendations
+    }
     
     
 }

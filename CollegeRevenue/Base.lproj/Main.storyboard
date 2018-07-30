@@ -139,11 +139,78 @@
                     <connections>
                         <outlet property="satMathScore" destination="lC7-ip-8wv" id="IQP-9g-bXK"/>
                         <outlet property="satReadingScore" destination="xki-vy-6RI" id="NgC-14-u7e"/>
+                        <segue destination="zEp-Yy-4jV" kind="show" identifier="swapToDisplayingCollege" id="QLy-Qq-dte"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJJ-up-ddQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1901.5999999999999" y="-115.59220389805098"/>
+        </scene>
+        <!--DisplayCollegesViewController-->
+        <scene sceneID="CtT-KP-B2e">
+            <objects>
+                <viewController title="DisplayCollegesViewController" id="zEp-Yy-4jV" customClass="DisplayColleges" customModule="CollegeRevenue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AMe-BZ-tKa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iFo-AF-Bfx">
+                                <rect key="frame" x="0.0" y="89" width="375" height="578"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="BaU-Fu-cxG">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BaU-Fu-cxG" id="XZH-Qq-IeU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zEp-Yy-4jV" id="jBI-gg-yNx"/>
+                                    <outlet property="delegate" destination="AMe-BZ-tKa" id="Hql-tF-PVe"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List of Reccomended Colleges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q79-eh-wMm">
+                                <rect key="frame" x="0.0" y="31" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iFo-AF-Bfx" firstAttribute="trailing" secondItem="RKD-Hv-kLp" secondAttribute="trailing" id="LtT-rs-hX6"/>
+                            <constraint firstItem="iFo-AF-Bfx" firstAttribute="top" secondItem="RKD-Hv-kLp" secondAttribute="top" constant="69" id="PjF-do-TI7"/>
+                            <constraint firstItem="iFo-AF-Bfx" firstAttribute="leading" secondItem="RKD-Hv-kLp" secondAttribute="leading" id="l4w-K5-alU"/>
+                            <constraint firstItem="iFo-AF-Bfx" firstAttribute="bottom" secondItem="RKD-Hv-kLp" secondAttribute="bottom" id="xWr-YS-nRm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RKD-Hv-kLp"/>
+                    </view>
+                    <connections>
+                        <segue destination="gp7-Gh-a7V" kind="show" identifier="collegeClicked" id="LNf-Ra-li1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZzX-iz-hY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2829.5999999999999" y="-111.0944527736132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZSR-EY-BEQ">
+            <objects>
+                <viewController id="gp7-Gh-a7V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ld0-1J-POF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yDM-ol-hoL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCx-HF-BB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3724" y="-111"/>
         </scene>
         <!--EnterActViewController-->
         <scene sceneID="8uU-rW-uZx">
