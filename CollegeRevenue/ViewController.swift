@@ -27,7 +27,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate{
 
     @objc func sign(_ notification: Notification) {
        
-            self.performSegue(withIdentifier: "goToHomeScreen", sender: self)
+            self.performSegue(withIdentifier: "chooseWayToSearch", sender: self)
         
         
     }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDelegate{
-
+    
     let fileName: String = "CSVRec"
     let filePrefix: String = "csv"
     var colleges: [String] = []
@@ -23,7 +23,7 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
     func readText() {
         let file = "CSVRec.csv" //this is the file. we will write to and read from it
        // let text = "some text" //just a text
-        print("IN THE DMS")
+        print("reading the list of colleges")
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             let fileURL = dir.appendingPathComponent(file)
             //reading
@@ -48,6 +48,7 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
         //let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: cell.)
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! UITableViewCell
         cell.textLabel?.text = colleges[indexPath.item]
+        cell.isUserInteractionEnabled = true
         return cell
     }
     
@@ -55,16 +56,15 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
 //        print("in")
 //    }
     
-//    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == localPostsDetailSegue {
-//            if let destination = segue.destinationViewController as? LocalPostsDetailViewController {
-//                destination.postName.text! = names[currentIndexPath.row]
-//            }
-//        }
-//    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        print("hi")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let id = segue.identifier else { return }
+        if id == "collegeClicked" {
+            print("hi")
+        }
     }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("i'm seloected")
+//    }
     
 }

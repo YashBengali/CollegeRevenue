@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollegeRevenue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CollegeRevenue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,17 +40,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="6gB-OQ-g5m" kind="show" identifier="goToHomeScreen" id="Q6k-2v-IXW"/>
+                        <segue destination="5q0-YO-rTD" kind="show" identifier="chooseWayToSearch" id="bJk-aB-8Am"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-1217" y="137"/>
         </scene>
-        <!--Home Screen View Controller-->
+        <!--HomeScreenController-->
         <scene sceneID="FPu-cC-fNc">
             <objects>
-                <viewController storyboardIdentifier="HomeScreenViewController" id="6gB-OQ-g5m" customClass="HomeScreenViewController" customModule="CollegeRevenue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreenViewController" title="HomeScreenController" id="6gB-OQ-g5m" customClass="HomeScreenViewController" customModule="CollegeRevenue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OqQ-t1-APJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,6 +94,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRp-Ix-FV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1020" y="137.18140929535232"/>
+        </scene>
+        <!--WayOfSearching-->
+        <scene sceneID="aNI-pk-0sT">
+            <objects>
+                <viewController title="WayOfSearching" id="5q0-YO-rTD" customClass="WayOfSearching" customModule="CollegeRevenue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H2L-1d-iow">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQ7-lw-h3L">
+                                <rect key="frame" x="115" y="146" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Standardized Testing"/>
+                                <connections>
+                                    <action selector="standardizedTestingButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="exy-vw-085"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLt-s7-Rza">
+                                <rect key="frame" x="141" y="421" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="College Name"/>
+                                <connections>
+                                    <action selector="collegeNameButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="Usc-Qh-Z8B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0I2-mS-gNh">
+                                <rect key="frame" x="169" y="277" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="State"/>
+                                <connections>
+                                    <action selector="stateButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="CSt-Kw-qoU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bTS-gO-OXz"/>
+                    </view>
+                    <connections>
+                        <segue destination="6gB-OQ-g5m" kind="show" identifier="enterStandarizedTestingScore" id="ei8-Rn-0i2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wx-H8-Y4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118" y="137"/>
         </scene>
         <!--EnterSatViewController-->
         <scene sceneID="RF1-5Y-5C8">
@@ -165,11 +209,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gp7-Gh-a7V" kind="show" identifier="collegeClicked" id="eKo-MX-JZJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="zEp-Yy-4jV" id="jBI-gg-yNx"/>
-                                    <outlet property="delegate" destination="AMe-BZ-tKa" id="Hql-tF-PVe"/>
+                                    <outlet property="delegate" destination="AMe-BZ-tKa" id="HiX-UC-b4x"/>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List of Reccomended Colleges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q79-eh-wMm">
@@ -189,18 +236,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RKD-Hv-kLp"/>
                     </view>
-                    <connections>
-                        <segue destination="gp7-Gh-a7V" kind="show" identifier="collegeClicked" id="LNf-Ra-li1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZzX-iz-hY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2829.5999999999999" y="-111.0944527736132"/>
         </scene>
-        <!--View Controller-->
+        <!--collegeInformation-->
         <scene sceneID="ZSR-EY-BEQ">
             <objects>
-                <viewController id="gp7-Gh-a7V" sceneMemberID="viewController">
+                <viewController title="collegeInformation" id="gp7-Gh-a7V" customClass="CollegeInformation" customModule="CollegeRevenue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ld0-1J-POF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
