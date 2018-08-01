@@ -11,7 +11,7 @@
 		D305786E2107A12400AFBA0E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */; };
 		D30578702107BDE700AFBA0E /* Sat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305786F2107BDE700AFBA0E /* Sat.swift */; };
 		D30578722107BDF200AFBA0E /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30578712107BDF200AFBA0E /* Act.swift */; };
-		D30C53DD2108D88700366B40 /* college_summary.csv in Resources */ = {isa = PBXBuildFile; fileRef = D30C53DC2108D88700366B40 /* college_summary.csv */; };
+		D3718AF3211164AB007D06AB /* college_data_main.csv in Resources */ = {isa = PBXBuildFile; fileRef = D3718AF2211164AB007D06AB /* college_data_main.csv */; };
 		D3724C7621066E86000E9367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7521066E86000E9367 /* AppDelegate.swift */; };
 		D3724C7821066E86000E9367 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3724C7721066E86000E9367 /* ViewController.swift */; };
 		D3724C7B21066E86000E9367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3724C7921066E86000E9367 /* Main.storyboard */; };
@@ -20,6 +20,7 @@
 		D3724C8321066E88000E9367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3724C8121066E88000E9367 /* LaunchScreen.storyboard */; };
 		D3724C8B2106747F000E9367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3724C8A2106747E000E9367 /* GoogleService-Info.plist */; };
 		D3CC54752110CBCB00D0AE8B /* WayOfSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC54742110CBCB00D0AE8B /* WayOfSearching.swift */; };
+		D3CC547B2110D07200D0AE8B /* StateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC547A2110D07200D0AE8B /* StateSelectionViewController.swift */; };
 		D3CDC539210A7ED400AA8054 /* client_id.json in Resources */ = {isa = PBXBuildFile; fileRef = D3CDC538210A7ED300AA8054 /* client_id.json */; };
 		D3D458A0210B77DA00B2AB17 /* DisplayColleges.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4589F210B77DA00B2AB17 /* DisplayColleges.swift */; };
 		D3F20174210FD681001A1083 /* CollegeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F20173210FD681001A1083 /* CollegeInformation.swift */; };
@@ -32,7 +33,7 @@
 		D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		D305786F2107BDE700AFBA0E /* Sat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sat.swift; sourceTree = "<group>"; };
 		D30578712107BDF200AFBA0E /* Act.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
-		D30C53DC2108D88700366B40 /* college_summary.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = college_summary.csv; sourceTree = "<group>"; };
+		D3718AF2211164AB007D06AB /* college_data_main.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = college_data_main.csv; sourceTree = "<group>"; };
 		D3724C7221066E86000E9367 /* CollegeRevenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeRevenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3724C7521066E86000E9367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3724C7721066E86000E9367 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		D3724C8421066E88000E9367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3724C8A2106747E000E9367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3CC54742110CBCB00D0AE8B /* WayOfSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayOfSearching.swift; sourceTree = "<group>"; };
+		D3CC547A2110D07200D0AE8B /* StateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSelectionViewController.swift; sourceTree = "<group>"; };
 		D3CDC538210A7ED300AA8054 /* client_id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = client_id.json; sourceTree = "<group>"; };
 		D3D4589F210B77DA00B2AB17 /* DisplayColleges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayColleges.swift; sourceTree = "<group>"; };
 		D3F20173210FD681001A1083 /* CollegeInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeInformation.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		D3724C7421066E86000E9367 /* CollegeRevenue */ = {
 			isa = PBXGroup;
 			children = (
+				D3CC547A2110D07200D0AE8B /* StateSelectionViewController.swift */,
 				D3724C7521066E86000E9367 /* AppDelegate.swift */,
 				D3D4589F210B77DA00B2AB17 /* DisplayColleges.swift */,
 				D3724C7721066E86000E9367 /* ViewController.swift */,
@@ -108,8 +111,8 @@
 				D3F20173210FD681001A1083 /* CollegeInformation.swift */,
 				D305786F2107BDE700AFBA0E /* Sat.swift */,
 				D30578712107BDF200AFBA0E /* Act.swift */,
+				D3718AF2211164AB007D06AB /* college_data_main.csv */,
 				D305786D2107A12400AFBA0E /* HomeScreenViewController.swift */,
-				D30C53DC2108D88700366B40 /* college_summary.csv */,
 				D3724C7F21066E88000E9367 /* Assets.xcassets */,
 				D3724C8121066E88000E9367 /* LaunchScreen.storyboard */,
 				D3724C8421066E88000E9367 /* Info.plist */,
@@ -180,10 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3724C8321066E88000E9367 /* LaunchScreen.storyboard in Resources */,
+				D3718AF3211164AB007D06AB /* college_data_main.csv in Resources */,
 				D3724C8021066E88000E9367 /* Assets.xcassets in Resources */,
 				D3724C7B21066E86000E9367 /* Main.storyboard in Resources */,
 				D3CDC539210A7ED400AA8054 /* client_id.json in Resources */,
-				D30C53DD2108D88700366B40 /* college_summary.csv in Resources */,
 				D3724C8B2106747F000E9367 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +274,7 @@
 				D3F20174210FD681001A1083 /* CollegeInformation.swift in Sources */,
 				D305786E2107A12400AFBA0E /* HomeScreenViewController.swift in Sources */,
 				D3CC54752110CBCB00D0AE8B /* WayOfSearching.swift in Sources */,
+				D3CC547B2110D07200D0AE8B /* StateSelectionViewController.swift in Sources */,
 				D3724C7821066E86000E9367 /* ViewController.swift in Sources */,
 				D3724C7621066E86000E9367 /* AppDelegate.swift in Sources */,
 			);

@@ -16,7 +16,7 @@ class WayOfSearching: UIViewController {
     }
     
     @IBAction func stateButtonPressed(_ sender: UIButton) {
-        print("only standardized testing button has been implemented so far")
+        self.performSegue(withIdentifier: "stateSegue", sender: self)
     }
     
     @IBAction func collegeNameButtonPressed(_ sender: UIButton) {

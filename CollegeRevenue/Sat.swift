@@ -19,11 +19,12 @@ class Sat: UIViewController {
     @IBOutlet weak var satReadingScore: UITextField!
     var collegeReccomendations: [String] = []
     var finalSatScore: Int = 0
-    let satScoreIndex: Int = 28
-    let collegeNameIndex: Int = 3
+    let satScoreIndex: Int = 6
+    let collegeNameIndex: Int = 1
     let actScoreIndex: Int = 29
-    let fileName: String = "college_summary"
+    let fileName: String = "college_data_main"
     let filePrefix: String = "csv"
+    let collegeStateIndex: Int = 3
     //var collegeReccomendations: [String] = []
     @IBAction func satScoreSent(_ sender: UIButton) {
         if let math=satMathScore.text{
@@ -51,6 +52,7 @@ class Sat: UIViewController {
         var satScore: [String] = []
         for index in 1..<parsedCSV.count {
             college = parsedCSV[index]
+            print(college)
             satScore.append(college[satScoreIndex])
             collegeName.append(college[collegeNameIndex])
         }
@@ -67,7 +69,6 @@ class Sat: UIViewController {
                 
             }
             counter+=1
-            
         }
       //  print(collegeWithSat)
         

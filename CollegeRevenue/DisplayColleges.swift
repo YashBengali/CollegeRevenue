@@ -14,6 +14,9 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
     let fileName: String = "CSVRec"
     let filePrefix: String = "csv"
     var colleges: [String] = []
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     var currentIndexPath: NSIndexPath?
     override func viewDidLoad() {
         print("hello")
@@ -21,6 +24,8 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     func readText() {
+        print("-------READ TEXT---------")
+
         let file = "CSVRec.csv" //this is the file. we will write to and read from it
        // let text = "some text" //just a text
         print("reading the list of colleges")
@@ -41,10 +46,13 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("-------NUMBEROFROWS IN SECTION---------")
+
         return colleges.count
     }
-    
+    // this is not called
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("-------TABLE VIEW FOR ROW AT CALLED---------")
         //let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: cell.)
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! UITableViewCell
         cell.textLabel?.text = colleges[indexPath.item]
@@ -52,14 +60,30 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("in")
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("in")
+    }
     
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let id = segue.identifier else { return }
+//        if id == "collegeClicked" {
+//            print("hi")
+//        }
+//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let id = segue.identifier else { return }
-        if id == "collegeClicked" {
-            print("hi")
+        print("-------PREPARE CALLED---------")
+        guard let indexPath = tableView.indexPathForSelectedRow else{return}
+        let index = indexPath.row
+        let collegeNameToPass = colleges[index]
+        //let note = notes[indexPath.row]
+//        let destination = segue.destination as! DisplayNoteViewController
+//        destination.note = note
+        
+        if segue.identifier == "collegeClicked" {
+            if let destination = segue.destination as?  CollegeInformation{
+                destination.collegeNamePassedIn = collegeNameToPass
+            }
         }
     }
     
