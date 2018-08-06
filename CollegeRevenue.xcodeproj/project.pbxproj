@@ -19,6 +19,8 @@
 		D3724C8021066E88000E9367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3724C7F21066E88000E9367 /* Assets.xcassets */; };
 		D3724C8321066E88000E9367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3724C8121066E88000E9367 /* LaunchScreen.storyboard */; };
 		D3724C8B2106747F000E9367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3724C8A2106747E000E9367 /* GoogleService-Info.plist */; };
+		D381D35C21128B5F0027781A /* SearchCollege.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381D35B21128B5F0027781A /* SearchCollege.swift */; };
+		D3AA44F1211374B500190AF0 /* PickState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA44F0211374B500190AF0 /* PickState.swift */; };
 		D3CC54752110CBCB00D0AE8B /* WayOfSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC54742110CBCB00D0AE8B /* WayOfSearching.swift */; };
 		D3CC547B2110D07200D0AE8B /* StateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC547A2110D07200D0AE8B /* StateSelectionViewController.swift */; };
 		D3CDC539210A7ED400AA8054 /* client_id.json in Resources */ = {isa = PBXBuildFile; fileRef = D3CDC538210A7ED300AA8054 /* client_id.json */; };
@@ -43,6 +45,8 @@
 		D3724C8221066E88000E9367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3724C8421066E88000E9367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3724C8A2106747E000E9367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D381D35B21128B5F0027781A /* SearchCollege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollege.swift; sourceTree = "<group>"; };
+		D3AA44F0211374B500190AF0 /* PickState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickState.swift; sourceTree = "<group>"; };
 		D3CC54742110CBCB00D0AE8B /* WayOfSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayOfSearching.swift; sourceTree = "<group>"; };
 		D3CC547A2110D07200D0AE8B /* StateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSelectionViewController.swift; sourceTree = "<group>"; };
 		D3CDC538210A7ED300AA8054 /* client_id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = client_id.json; sourceTree = "<group>"; };
@@ -102,11 +106,13 @@
 		D3724C7421066E86000E9367 /* CollegeRevenue */ = {
 			isa = PBXGroup;
 			children = (
+				D3AA44F0211374B500190AF0 /* PickState.swift */,
 				D3CC547A2110D07200D0AE8B /* StateSelectionViewController.swift */,
 				D3724C7521066E86000E9367 /* AppDelegate.swift */,
 				D3D4589F210B77DA00B2AB17 /* DisplayColleges.swift */,
 				D3724C7721066E86000E9367 /* ViewController.swift */,
 				D3724C7921066E86000E9367 /* Main.storyboard */,
+				D381D35B21128B5F0027781A /* SearchCollege.swift */,
 				D3CC54742110CBCB00D0AE8B /* WayOfSearching.swift */,
 				D3F20173210FD681001A1083 /* CollegeInformation.swift */,
 				D305786F2107BDE700AFBA0E /* Sat.swift */,
@@ -269,6 +275,8 @@
 			files = (
 				D30578722107BDF200AFBA0E /* Act.swift in Sources */,
 				D3D458A0210B77DA00B2AB17 /* DisplayColleges.swift in Sources */,
+				D3AA44F1211374B500190AF0 /* PickState.swift in Sources */,
+				D381D35C21128B5F0027781A /* SearchCollege.swift in Sources */,
 				D3724C7E21066E86000E9367 /* CollegeRevenue.xcdatamodeld in Sources */,
 				D30578702107BDE700AFBA0E /* Sat.swift in Sources */,
 				D3F20174210FD681001A1083 /* CollegeInformation.swift in Sources */,

@@ -60,9 +60,9 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("in")
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("in")
+//    }
     
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -85,6 +85,9 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
                 destination.collegeNamePassedIn = collegeNameToPass
             }
         }
+    }
+    
+    @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
     }
     
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

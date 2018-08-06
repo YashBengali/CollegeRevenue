@@ -75,6 +75,7 @@ class StateSelectionViewController: UIViewController, UITableViewDataSource, UIT
         return cell
     }
     
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == nil || searchBar.text == "" {
             isSearching = false
@@ -87,12 +88,25 @@ class StateSelectionViewController: UIViewController, UITableViewDataSource, UIT
         }
         
     }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print
+//        performSegue(withIdentifier: "goToSearchCollege", sender: self)
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("-------PREPARE CALLED---------")
+        guard let indexPath = tableView.indexPathForSelectedRow else{return}
+        let index = indexPath.row
+        let collegeNameToPass = colleges[index]
+        //let note = notes[indexPath.row]
+        //        let destination = segue.destination as! DisplayNoteViewController
+        //        destination.note = note
+
+        if segue.identifier == "swapToDisplayCollege" {
+            if let destination = segue.destination as?  CollegeInformation{
+                destination.collegeNamePassedIn = collegeNameToPass
+            }
+        }
+    }
 }
-    
-    
-        
-
-    
-
-
-

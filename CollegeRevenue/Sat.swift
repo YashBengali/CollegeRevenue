@@ -120,6 +120,12 @@ class Sat: UIViewController {
             let fileURL = path.appendingPathComponent("CSVRec.csv")
 //            print("PRINTING OUT THE file url NOW ******************")
 //            print(fileURL)
+            
+            do {
+                try fileManager.removeItem(atPath: "CSVRec.csv")
+            }
+            catch let error as NSError {
+            }
 
             print(fileURL)
             try csvString.write(to: fileURL, atomically: true, encoding: .utf8)
@@ -150,6 +156,8 @@ class Sat: UIViewController {
         print("in the return college list function")
         print(collegeReccomendations)
         return collegeReccomendations
+    }
+    @IBAction func unwindToChoosingMethod(_ segue: UIStoryboardSegue) {
     }
     
     

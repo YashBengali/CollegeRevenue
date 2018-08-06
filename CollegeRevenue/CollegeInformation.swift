@@ -110,10 +110,6 @@ class CollegeInformation: UIViewController {
         salaryLabel.text = salary
         topSalaryLabel.text = highSalary
     }
-    @IBAction func unwindToListOfReccomendedColleges(segue: UIStoryboardSegue, _ sender: UIBarButtonItem) {
-        print("button pressed")
-        self.performSegue(withIdentifier: "goBackToCollegeRecs", sender: self)
-
-    }
+    
 
 }

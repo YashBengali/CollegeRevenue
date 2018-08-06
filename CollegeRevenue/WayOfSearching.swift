@@ -20,7 +20,10 @@ class WayOfSearching: UIViewController {
     }
     
     @IBAction func collegeNameButtonPressed(_ sender: UIButton) {
-        print("only standardized testing button has been implemented so far")
+        self.performSegue(withIdentifier: "swapToPickingState", sender: self)
     }
+    
+   
+
     
 }
