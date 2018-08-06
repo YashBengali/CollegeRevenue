@@ -141,10 +141,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.24705882352941178" green="0.53333333333333333" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bTS-gO-OXz"/>
                     </view>
                     <connections>
+                        <outlet property="collegeNameButton" destination="0I2-mS-gNh" id="xtd-kk-M03"/>
+                        <outlet property="standardizedTestingButton" destination="UQ7-lw-h3L" id="7EV-y4-Zv9"/>
+                        <outlet property="stateButton" destination="WLt-s7-Rza" id="3Rx-AU-apJ"/>
                         <segue destination="6gB-OQ-g5m" kind="show" identifier="enterStandarizedTestingScore" id="ei8-Rn-0i2"/>
                         <segue destination="edP-O3-RkO" kind="show" identifier="stateSegue" id="gR6-ZD-7be"/>
                         <segue destination="TLv-VD-KQj" kind="show" identifier="swapToPickingState" id="lud-7e-c2Q"/>
@@ -233,9 +236,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="zEp-Yy-4jV" kind="show" identifier="hi" id="h9e-mZ-wxZ"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -249,6 +249,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="40q-Dq-Jdw" id="LVU-HD-RJo"/>
+                        <segue destination="zEp-Yy-4jV" kind="show" identifier="hi" id="WlD-Xq-cgU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxn-8i-gu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -595,7 +596,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eKo-MX-JZJ"/>
-        <segue reference="h9e-mZ-wxZ"/>
+        <segue reference="muu-Bs-11P"/>
+        <segue reference="WlD-Xq-cgU"/>
     </inferredMetricsTieBreakers>
 </document>

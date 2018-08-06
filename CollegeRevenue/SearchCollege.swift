@@ -13,7 +13,7 @@ class SearchCollege: UIViewController {
     var collegeNamePassedIn: String = ""
     
     override func viewDidLoad() {
-         print(collegeNamePassedIn)
+         //print(collegeNamePassedIn)
     }
     
 }

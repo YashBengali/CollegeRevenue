@@ -19,18 +19,19 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     var currentIndexPath: NSIndexPath?
     override func viewDidLoad() {
-        print("hello")
+        //print("hello")
         readText()
     }
     
     func readText() {
-        print("-------READ TEXT---------")
+        //print("-------READ TEXT---------")
 
         let file = "CSVRec.csv" //this is the file. we will write to and read from it
        // let text = "some text" //just a text
-        print("reading the list of colleges")
+        //print("reading the list of colleges")
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             let fileURL = dir.appendingPathComponent(file)
+            print("\n\nreading from locsation: \(fileURL)")
             //reading
             do {
                 let contentString = try String(contentsOf: fileURL, encoding: .utf8)
@@ -46,13 +47,13 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("-------NUMBEROFROWS IN SECTION---------")
+        //print("-------NUMBEROFROWS IN SECTION---------")
 
         return colleges.count
     }
     // this is not called
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("-------TABLE VIEW FOR ROW AT CALLED---------")
+//        print("-------TABLE VIEW FOR ROW AT CALLED---------")
         //let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: cell.)
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! UITableViewCell
         cell.textLabel?.text = colleges[indexPath.item]

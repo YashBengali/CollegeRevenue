@@ -95,7 +95,7 @@ class StateSelectionViewController: UIViewController, UITableViewDataSource, UIT
 //    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("-------PREPARE CALLED---------")
+        //print("-------PREPARE CALLED---------")
         guard let indexPath = tableView.indexPathForSelectedRow else{return}
         let index = indexPath.row
         let collegeNameToPass = colleges[index]

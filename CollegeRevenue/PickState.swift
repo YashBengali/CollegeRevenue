@@ -131,18 +131,18 @@ class PickState: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        print("hi")
+        //print("hi")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("in the num of rows in section function \(listOfStateNames.count)")
+        //print("in the num of rows in section function \(listOfStateNames.count)")
         return 50
     }
 
     // this is not called
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! UITableViewCell
-        print(indexPath.item)
+        //print(indexPath.item)
         cell.textLabel?.text = listOfStateNames[indexPath.item]
         cell.isUserInteractionEnabled = true
         return cell
@@ -170,7 +170,7 @@ class PickState: UIViewController, UITableViewDataSource, UITableViewDelegate {
         var state: [String] = []
         for index in 1..<parsedCSV.count {
             college = parsedCSV[index]
-            print(college)
+            //print(college)
             state.append(college[collegeStateIndex])
             collegeName.append(college[collegeNameIndex])
         }
@@ -208,7 +208,7 @@ class PickState: UIViewController, UITableViewDataSource, UITableViewDelegate {
             }
             temporaryCounter+=1
         }
-        print(collegeReccomendations)
+        //print(collegeReccomendations)
         //print(collegeReccomendations)
         let finalCollegeReccomendations: String = convertArrayToString(array: collegeReccomendations)
         //let finalCollegeName: String = convertArrayToString(array: collegeWithSat)
@@ -220,8 +220,8 @@ class PickState: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func createCSV(input: String) {
         // let csvString = "hello"
-        print("-----------------INSIDE THE CREATE CSV FUNCTION------------------")
-        print(input)
+//        print("-----------------INSIDE THE CREATE CSV FUNCTION------------------")
+//        print(input)
         let csvString  = input
         let fileManager = FileManager.default
         do {
@@ -231,13 +231,12 @@ class PickState: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let fileURL = path.appendingPathComponent("CSVRec.csv")
             //            print("PRINTING OUT THE file url NOW ******************")
             //            print(fileURL)
-            
+            print("\n\nwriting to \(fileURL)")
             do {
                 try fileManager.removeItem(atPath: "CSVRec.csv")
             }
             catch let error as NSError {
             }
-            print(fileURL)
             try csvString.write(to: fileURL, atomically: true, encoding: .utf8)
             print("it wrote to the file")
             print(fileURL)

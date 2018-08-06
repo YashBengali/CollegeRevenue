@@ -31,7 +31,7 @@ class Sat: UIViewController {
             if let reading = satReadingScore.text {
                let mathAsInt = (math as NSString).integerValue
                let readingAsInt = (reading as NSString).integerValue
-                print(mathAsInt+readingAsInt)
+                //print(mathAsInt+readingAsInt)
                 finalSatScore = mathAsInt+readingAsInt
                 readText()
                 changeViewControlllers()
@@ -52,7 +52,7 @@ class Sat: UIViewController {
         var satScore: [String] = []
         for index in 1..<parsedCSV.count {
             college = parsedCSV[index]
-            print(college)
+            //print(college)
             satScore.append(college[satScoreIndex])
             collegeName.append(college[collegeNameIndex])
         }
@@ -153,8 +153,8 @@ class Sat: UIViewController {
     }
     
     func returnCollegeList() -> [String] {
-        print("in the return college list function")
-        print(collegeReccomendations)
+        //print("in the return college list function")
+        //print(collegeReccomendations)
         return collegeReccomendations
     }
     @IBAction func unwindToChoosingMethod(_ segue: UIStoryboardSegue) {

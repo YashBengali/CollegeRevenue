@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
-        print("WE HAVE SIGNED IN")
+        //print("WE HAVE SIGNED IN")
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "userDidSignInSuccessfully"), object: nil)
       //  ViewController.performSegue(withIdentifier: "HomeScreenViewController", sender: ViewController)
         // ...
