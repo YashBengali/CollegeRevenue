@@ -55,33 +55,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter your SAT or ACT score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdI-Xu-g8n">
-                                <rect key="frame" x="47" y="63" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-tV-VK2">
-                                <rect key="frame" x="81" y="368" width="212" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="ACT"/>
-                                <connections>
-                                    <action selector="actButtonPressed:" destination="6gB-OQ-g5m" eventType="touchUpInside" id="J0x-kn-yeu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKx-mb-iCn">
-                                <rect key="frame" x="81" y="213" width="212" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="SAT"/>
-                                <connections>
-                                    <action selector="satButtonPressed:" destination="6gB-OQ-g5m" eventType="touchUpInside" id="BUF-fk-z76"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uhi-0F-r3D">
+                                <rect key="frame" x="25" y="100" width="325" height="367"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dku-9c-Gl0">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="367"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your SAT or ACT score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdI-Xu-g8n">
+                                                <rect key="frame" x="27" y="0.0" width="271.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKx-mb-iCn">
+                                                <rect key="frame" x="136" y="20.5" width="53" height="298.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="SAT"/>
+                                                <connections>
+                                                    <action selector="satButtonPressed:" destination="6gB-OQ-g5m" eventType="touchUpInside" id="BUF-fk-z76"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-tV-VK2">
+                                                <rect key="frame" x="134" y="319" width="57" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="ACT"/>
+                                                <connections>
+                                                    <action selector="actButtonPressed:" destination="6gB-OQ-g5m" eventType="touchUpInside" id="J0x-kn-yeu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.30196078431372547" green="0.80784313725490198" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uhi-0F-r3D" secondAttribute="bottom" constant="200" id="7oN-wx-PNK"/>
+                            <constraint firstItem="YQe-HV-d8d" firstAttribute="trailing" secondItem="uhi-0F-r3D" secondAttribute="trailing" constant="25" id="Sgw-qq-hsO"/>
+                            <constraint firstItem="uhi-0F-r3D" firstAttribute="top" secondItem="OqQ-t1-APJ" secondAttribute="top" constant="100" id="WGr-uu-hPD"/>
+                            <constraint firstItem="uhi-0F-r3D" firstAttribute="leading" secondItem="YQe-HV-d8d" secondAttribute="leading" constant="25" id="oAx-bw-jBS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YQe-HV-d8d"/>
                     </view>
                     <connections>
@@ -611,7 +624,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4be-PA-DW2"/>
-        <segue reference="WlD-Xq-cgU"/>
+        <segue reference="eKo-MX-JZJ"/>
+        <segue reference="QLy-Qq-dte"/>
     </inferredMetricsTieBreakers>
 </document>
