@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.80784313725490198" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="YQe-HV-d8d"/>
                     </view>
                     <connections>
@@ -190,6 +190,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gp7-Gh-a7V" kind="show" identifier="swapToDisplayCollege" id="4be-PA-DW2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -213,7 +216,6 @@
                         <outlet property="searchBar" destination="zEr-nk-dtg" id="hlW-dC-0Ed"/>
                         <outlet property="searchDisplayController" destination="yKa-V5-1Ur" id="dWz-Yy-w1D"/>
                         <outlet property="tableView" destination="tkZ-8v-DyO" id="okb-w4-jyB"/>
-                        <segue destination="gp7-Gh-a7V" kind="show" identifier="swapToDisplayCollege" id="muu-Bs-11P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eu9-RK-rHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -609,7 +611,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="muu-Bs-11P"/>
+        <segue reference="4be-PA-DW2"/>
         <segue reference="WlD-Xq-cgU"/>
     </inferredMetricsTieBreakers>
 </document>
