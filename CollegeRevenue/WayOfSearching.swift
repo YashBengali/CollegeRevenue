@@ -47,6 +47,9 @@ class WayOfSearching: UIViewController {
         stateButton.layer.borderWidth = 1
         stateButton.layer.borderColor = UIColor.black.cgColor
     }
+    
+    @IBAction func wayOfSearchingRewind(_ segue: UIStoryboardSegue) {
+    }
    
 
     

@@ -37,6 +37,7 @@ class Sat: UIViewController {
                 changeViewControlllers()
             }
         }
+
     }
     
     func readText() {
@@ -158,6 +159,10 @@ class Sat: UIViewController {
         return collegeReccomendations
     }
     @IBAction func unwindToChoosingMethod(_ segue: UIStoryboardSegue) {
+    }
+    
+    func warnUser(){
+        
     }
     
     
