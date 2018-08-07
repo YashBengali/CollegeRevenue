@@ -103,45 +103,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQ7-lw-h3L">
-                                <rect key="frame" x="115" y="146" width="145" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Standardized Testing">
-                                    <color key="titleColor" red="0.011764705882352941" green="0.16862745098039217" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="standardizedTestingButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="exy-vw-085"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLt-s7-Rza">
-                                <rect key="frame" x="171" y="421" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="State">
-                                    <color key="titleColor" red="0.011764705882352941" green="0.16862745098039217" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="collegeNameButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="Usc-Qh-Z8B"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0I2-mS-gNh">
-                                <rect key="frame" x="140" y="277" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="College Name">
-                                    <color key="titleColor" red="0.011764705882352941" green="0.16862745098039217" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="stateButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="CSt-Kw-qoU"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How would you like to search colleges?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbW-JG-NQw">
-                                <rect key="frame" x="0.0" y="39" width="375" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How would you like to search colleges?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbW-JG-NQw">
+                                <rect key="frame" x="16" y="36" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="5o8-6i-fDR">
+                                <rect key="frame" x="50" y="131.5" width="275" height="465.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQ7-lw-h3L">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+                                        <color key="backgroundColor" red="0.85882352941176465" green="0.92156862745098034" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Standardized Testing">
+                                            <color key="titleColor" red="0.011764705882352941" green="0.16862745098039217" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="standardizedTestingButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="exy-vw-085"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0I2-mS-gNh">
+                                        <rect key="frame" x="0.0" y="218" width="275" height="30"/>
+                                        <color key="backgroundColor" red="0.96235281229019165" green="0.47160527864363166" blue="0.32155317591492433" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="College Name">
+                                            <color key="titleColor" red="0.011764705882352941" green="0.16862745098039217" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stateButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="CSt-Kw-qoU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLt-s7-Rza">
+                                        <rect key="frame" x="0.0" y="435.5" width="275" height="30"/>
+                                        <color key="backgroundColor" red="0.7349611862214912" green="0.96235281229019165" blue="0.18784940765356942" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="State">
+                                            <color key="titleColor" red="0.011764705882352941" green="0.16862745098039217" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="collegeNameButtonPressed:" destination="5q0-YO-rTD" eventType="touchUpInside" id="Usc-Qh-Z8B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.80784313725490198" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5o8-6i-fDR" firstAttribute="leading" secondItem="bTS-gO-OXz" secondAttribute="leading" constant="50" id="4Cf-Fe-OAr"/>
+                            <constraint firstItem="CbW-JG-NQw" firstAttribute="top" secondItem="bTS-gO-OXz" secondAttribute="top" constant="16" id="6J4-X2-6UY"/>
+                            <constraint firstItem="bTS-gO-OXz" firstAttribute="bottom" secondItem="5o8-6i-fDR" secondAttribute="bottom" constant="70" id="Ktx-Ke-OiV"/>
+                            <constraint firstItem="bTS-gO-OXz" firstAttribute="trailing" secondItem="CbW-JG-NQw" secondAttribute="trailing" constant="16" id="bjU-sK-1WX"/>
+                            <constraint firstItem="bTS-gO-OXz" firstAttribute="trailing" secondItem="5o8-6i-fDR" secondAttribute="trailing" constant="50" id="eLW-Q7-qB4"/>
+                            <constraint firstItem="5o8-6i-fDR" firstAttribute="top" secondItem="CbW-JG-NQw" secondAttribute="bottom" constant="75" id="eoj-qo-W8y"/>
+                            <constraint firstItem="CbW-JG-NQw" firstAttribute="leading" secondItem="bTS-gO-OXz" secondAttribute="leading" constant="16" id="wFs-T5-syj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bTS-gO-OXz"/>
                     </view>
                     <connections>
@@ -185,7 +198,7 @@
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zEr-nk-dtg">
-                                <rect key="frame" x="0.0" y="28" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="37" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -193,7 +206,7 @@
                                 </connections>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.80784313725490198" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="PsS-B4-T7s"/>
                     </view>
                     <connections>

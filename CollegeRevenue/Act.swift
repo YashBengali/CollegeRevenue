@@ -104,8 +104,8 @@ class Act: UIViewController {
         
 //        let satRangeLow = finalSatScore-50
 //        let satRangeHigh = finalSatScore+50
-        let actRangeLow = userActScore-2
-        let actRangeHigh = userActScore+2
+        let actRangeLow = userActScore-1
+        let actRangeHigh = userActScore+1
         var currentItem: Int?
         for item in finalActScore {
             currentItem = Int(item)

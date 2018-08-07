@@ -89,24 +89,24 @@ class StateSelectionViewController: UIViewController, UITableViewDataSource, UIT
         
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print
-//        performSegue(withIdentifier: "goToSearchCollege", sender: self)
-//    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //print("-------PREPARE CALLED---------")
-        guard let indexPath = tableView.indexPathForSelectedRow else{return}
-        let index = indexPath.row
-        let collegeNameToPass = colleges[index]
-        //let note = notes[indexPath.row]
-        //        let destination = segue.destination as! DisplayNoteViewController
-        //        destination.note = note
-
-        if segue.identifier == "swapToDisplayCollege" {
-            if let destination = segue.destination as?  CollegeInformation{
-                destination.collegeNamePassedIn = collegeNameToPass
-            }
-        }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("---- in did select row at-----")
+        performSegue(withIdentifier: "swapToDisplayCollege", sender: self)
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        //print("-------PREPARE CALLED---------")
+//        guard let indexPath = tableView.indexPathForSelectedRow else{return}
+//        let index = indexPath.row
+//        let collegeNameToPass = colleges[index]
+//        //let note = notes[indexPath.row]
+//        //        let destination = segue.destination as! DisplayNoteViewController
+//        //        destination.note = note
+//
+//        if segue.identifier == "swapToDisplayCollege" {
+//            if let destination = segue.destination as?  CollegeInformation{
+//                destination.collegeNamePassedIn = collegeNameToPass
+//            }
+//        }
+//    }
 }

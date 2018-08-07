@@ -27,24 +27,22 @@ class WayOfSearching: UIViewController {
     }
     
     override func viewDidLoad() {
-        // background of the view controller
-        view.backgroundColor = UIColor.darkGray
+        var temp = view.heightAnchor
         
         // standarized testing button
-        standardizedTestingButton.backgroundColor = .clear
+        //standardizedTestingButton.backgroundColor = .clear
         standardizedTestingButton.layer.cornerRadius = 5
         standardizedTestingButton.layer.borderWidth = 1
         standardizedTestingButton.layer.borderColor = UIColor.black.cgColor
-        standardizedTestingButton.backgroundColor = UIColor.white
         
         // college name button
-        collegeNameButton.backgroundColor = .clear
+        //collegeNameButton.backgroundColor = .clear
         collegeNameButton.layer.cornerRadius = 5
         collegeNameButton.layer.borderWidth = 1
         collegeNameButton.layer.borderColor = UIColor.black.cgColor
         
         // state button
-        stateButton.backgroundColor = .clear
+        //stateButton.backgroundColor = .clear
         stateButton.layer.cornerRadius = 5
         stateButton.layer.borderWidth = 1
         stateButton.layer.borderColor = UIColor.black.cgColor
