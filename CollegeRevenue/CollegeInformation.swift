@@ -105,10 +105,10 @@ class CollegeInformation: UIViewController {
         // setting values equal to the labels
         satLabel.text = satScoreFromData
         actLabel.text = actScoreFromData
-        costButtonInState.text = costOfAttendaceInState
-        costButtonOutOfState.text = costOfAttendaceOutState
-        salaryLabel.text = salary
-        topSalaryLabel.text = highSalary
+        costButtonInState.text = "$" + costOfAttendaceInState
+        costButtonOutOfState.text = "$" + costOfAttendaceOutState
+        salaryLabel.text = "$" + salary
+        topSalaryLabel.text = "$" + highSalary
     }
     
 

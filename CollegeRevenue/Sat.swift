@@ -32,9 +32,14 @@ class Sat: UIViewController {
                let mathAsInt = (math as NSString).integerValue
                let readingAsInt = (reading as NSString).integerValue
                 //print(mathAsInt+readingAsInt)
-                finalSatScore = mathAsInt+readingAsInt
-                readText()
-                changeViewControlllers()
+                if (mathAsInt >= 200) && (mathAsInt<=800) && (readingAsInt>=200) && (readingAsInt<=800) {
+                    finalSatScore = mathAsInt+readingAsInt
+                    readText()
+                    changeViewControlllers()
+                }
+                else {
+                    warnUser()
+                }
             }
         }
 
@@ -162,7 +167,18 @@ class Sat: UIViewController {
     }
     
     func warnUser(){
-        
+        let alert = UIAlertController(title: "Invalid Sat Score", message: "Please enter a score between 200-800 in the math and reading section", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            }}))
+        self.present(alert, animated: true, completion: nil)
     }
     
     

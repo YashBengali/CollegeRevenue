@@ -64,7 +64,7 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        print("in")
 //    }
-    
+
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        guard let id = segue.identifier else { return }
@@ -72,6 +72,8 @@ class DisplayColleges: UIViewController, UITableViewDataSource, UITableViewDeleg
 //            print("hi")
 //        }
 //    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("-------PREPARE CALLED---------")
         guard let indexPath = tableView.indexPathForSelectedRow else{return}

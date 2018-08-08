@@ -36,10 +36,17 @@ class Act: UIViewController {
                         let scienceAsDouble = (science as NSString).doubleValue
                         let added: Double = mathAsDouble+readingAsDouble+scienceAsDouble+grammarAsDouble
                         var average: Double = added/4
-                        average = round(average)
-                        userActScore = Int(average)
-                        readText()
-                        changeViewControllers()
+                        if (mathAsDouble>=1 && mathAsDouble<=36) && (readingAsDouble>=1 && readingAsDouble<=36) && (grammarAsDouble>=1 && grammarAsDouble<=36) && (scienceAsDouble>=1 && scienceAsDouble<=36) {
+                            
+                            average = round(average)
+                            userActScore = Int(average)
+                            readText()
+                            changeViewControllers()
+                        }
+                        else {
+                            warnUser()
+                        }
+                        
                     }
                 }
                
@@ -165,6 +172,21 @@ class Act: UIViewController {
         return collegeReccomendations
     }
     @IBAction func unwindToChoosingMethod(_ segue: UIStoryboardSegue) {
+    }
+    
+    func warnUser(){
+        let alert = UIAlertController(title: "Invalid Act Score", message: "Please enter a score between 1 and 36 in all the sections.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            }}))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
